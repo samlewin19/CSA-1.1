@@ -1,0 +1,21 @@
+Public class Bankacc
+{
+    private double amount;
+
+    public void getamount()
+    {
+    }
+
+    public void printbankamount()
+    {
+        System.out.println("Your bank account currently has $" + amount);
+    }
+    public void addmoney(double add)
+    {
+        amount+=add
+    }
+    public void removemoney(double remove)
+    {
+        amount-=remove
+    }
+}

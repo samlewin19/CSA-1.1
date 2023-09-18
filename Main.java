@@ -13,7 +13,7 @@ public class Main
     System.out.println(xz + z * x);
     Scanner s = new Scanner(System.in);
     System.out.println("What's your favorite number?");
-    int favNum = s.nextInt();
+    final int favNum = s.nextInt();
     System.out.println("Now let's try and divide your favorite number by 0");
     try {
     System.out.println(favNum / 0);
@@ -39,6 +39,7 @@ public class Main
     int bignum = s.nextInt();
     System.out.println("Wow, " + bignum + ", that's a big number!");
     int maxnum = Integer.MAX_VALUE;
+    System.out.println(maxnum);
     int difrence = Integer.MAX_VALUE - bignum;
     System.out.println(difrence);
     System.out.println("We can add " + difrence + " until we hit our max.");
@@ -48,5 +49,11 @@ public class Main
     Double add = s.nextDouble();
     bignum += add;
     System.out.println(bignum);
+
+
+
+    System.out.println("\n\nNow lets get serious, since " + favNum + " is your favorite number, " +
+            "that will be the starting balance of your bank account\n");
+    bankacc.printbankamount();
   }
 }
